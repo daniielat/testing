@@ -3,16 +3,30 @@ const I18nProvider = require('nordic/i18n/I18nProvider');
 const productsService = require('../../../services/productsService')
 const View = require('./view');
 
+// normal middleware
 exports.fetchProducts = function fetchProducts(req, res, next) {
   const { q, limit } = req.query;
   productsService.getProducts(req.platform.siteId, q, limit)
-    .then(data => {
-      res.locals.products = data;
-      next();
-    })
-    .catch(err => res.redirect('/error'));
-    // .catch(err => next(err));
-};
+      .then(data => {
+        res.locals.products = data;
+        next();
+      })
+      .catch(err => next(err));
+      // .catch(err => res.redirect('/error'));
+}
+
+// async middleware
+// exports.fetchProductsX = async function fetchProducts(req, res, next) {
+//   const { q, limit } = req.query;
+//   try {
+//     const products = await productsService.getProducts(req.platform.siteId, q, limit)
+//     res.locals.products = products;
+//     next();
+//   } catch(err) {
+//     next(err);
+//     // return res.redirect('/error');
+//   }
+// };
 
 /* istanbul ignore next */
 exports.render = function render(req, res) {

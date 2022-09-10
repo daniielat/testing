@@ -1,19 +1,24 @@
 const { fetchProducts } = require('../../../../../app/pages/products/controller');
 const httpMocks = require('node-mocks-http');
-const mock = require('nordic-dev/mocks')();
-const apiDomain = 'https://api.mercadolibre.com';
+const mockProducts = require('../../../../../mocks/test/get/https/api.mercadolibre.com/sites/MLA/search?limit=10&offset=0&q=celular.json');
+const mockError = require('../../../../../mocks/test/get/https/api.mercadolibre.com/sites/MLA/search?limit=a&offset=0.json');
+const restclient = require('nordic/restclient') // requerirlo es opcional
+
+jest.mock('nordic/restclient', () => () => ({
+    get: jest.fn((url, params) => {
+        switch(params.params.limit) {
+            case 10: 
+                return Promise.resolve(mockProducts);
+            case 'a':
+                return Promise.reject(mockError);
+        }
+    })
+}));
 
 // En este archivo falta poder testear el res.redirect dentro del 
 // catch cuando el middleware no es una función async, y poder 
 // hacerlo con done.
 describe('fetchProducts middleware', () => {
-    beforeAll(() => {
-        mock.intercept(apiDomain, ['/sites/*'])
-    });
-
-    afterAll(() => {
-        mock.restore(apiDomain, ['/sites/*']);
-    });
 
     // Llamada exitosa con done() 
     it('Guarda un array de productos en res.locals.products', (done) => {
@@ -37,7 +42,7 @@ describe('fetchProducts middleware', () => {
     });
 
       // Llamada fallida que invoca next(error), hecha con done()
-      xit('Invoca next con el error enviado por el servicio cuando falla', (done) => {
+      it('Invoca next con el error enviado por el servicio cuando falla', (done) => {
         const req = httpMocks.createRequest({
             method: 'GET',
             url: '/products',
@@ -118,6 +123,7 @@ describe('fetchProducts middleware', () => {
         res.redirect = jest.fn();
         try {
             await fetchProducts(req, res, next);
+            // console.log(res.redirect.mock.calls[0])
             expect(res.redirect).toHaveBeenCalledWith('/error');
         } catch(err) {
             console.log(err);

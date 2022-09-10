@@ -5,12 +5,12 @@
     "content-type": "application/json;charset=UTF-8",
     "transfer-encoding": "chunked",
     "connection": "keep-alive",
-    "date": "Sat, 10 Sep 2022 19:03:55 GMT",
+    "date": "Sat, 10 Sep 2022 19:00:53 GMT",
     "vary": "accept,accept-encoding",
     "cache-control": "max-age=0",
     "content-encoding": "gzip",
     "x-content-type-options": "nosniff",
-    "x-request-id": "34bf0586-13da-47dd-b1c3-6168de8275aa",
+    "x-request-id": "5dd9c6b7-ab42-4ede-9ef3-c71bf58da1b1",
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block",
     "access-control-allow-origin": "*",
@@ -18,9 +18,9 @@
     "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
     "access-control-max-age": "86400",
     "x-cache": "Error from cloudfront",
-    "via": "1.1 eb545987b8d6b1a956f00b9ca379f56a.cloudfront.net (CloudFront)",
+    "via": "1.1 3dd14007a7d5280087c2835af1d4631e.cloudfront.net (CloudFront)",
     "x-amz-cf-pop": "EZE50-P1",
-    "x-amz-cf-id": "YJpi_W7HpOd-ZnNgrAONH3dA1MxIl1Z3r-b_JMhnnBhWHnrZ-MV7Qw=="
+    "x-amz-cf-id": "W6yzc64vyThqZH9sd-lV9DrEa9bo7VNHGV0cVS6j_DHYXflgz2A5mQ=="
   },
   "data": {
     "message": "The limit requested contains invalid characters",

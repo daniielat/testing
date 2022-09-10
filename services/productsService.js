@@ -4,11 +4,12 @@ const restclient = require('nordic/restclient')({
 })
 
 class ProductsService {
-    static getProducts(siteId, q, limit) {
+    static getProducts(siteId, q, limit, offset) {
         return restclient.get(`/sites/${siteId}/search?`, {
             params: {
                 q, 
                 limit,
+                offset
             }
         })
             .then(response => {
