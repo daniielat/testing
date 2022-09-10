@@ -28,6 +28,7 @@
     "nordic": "^7.12.1"
   },
   "devDependencies": {
+    "node-mocks-http": "1.11.0",
     "nordic-dev": "^7.12.1",
     "nordic-e2e-toolkit": "1.0.0-wdio7-cucumber"
   },

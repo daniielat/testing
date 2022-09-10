@@ -1,0 +1,31 @@
+{
+  "status": 400,
+  "statusText": "Bad Request",
+  "headers": {
+    "content-type": "application/json;charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "date": "Sat, 10 Sep 2022 02:26:28 GMT",
+    "vary": "accept,accept-encoding",
+    "cache-control": "max-age=0",
+    "content-encoding": "gzip",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "af18bc9e-62a3-4dab-b2f9-4420e1b6f165",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Error from cloudfront",
+    "via": "1.1 bc0f65f2f15017a70c76306d6427a51c.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "GRU1-C2",
+    "x-amz-cf-id": "VCAOFctUUOw90ZHsXGIZCM8WR9Eey1T_nSK49GzKsxjvmQz24oZ04A=="
+  },
+  "data": {
+    "message": "The limit requested contains invalid characters",
+    "error": "bad_request",
+    "status": 400,
+    "cause": []
+  }
+}

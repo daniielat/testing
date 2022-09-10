@@ -22,4 +22,14 @@ module.exports = {
       verbose: true,
     },
   ],
+  collectCoverageFrom: [
+    '{app,middlewares,services}/**/*.{js,jsx}',
+    '!app/client/**',
+    '!app/context/**',
+    '!app/nordic-pages/**',
+    '!app/**/index.js',
+    '!**/__tests__/**',
+    '!**/*.spec.js',
+    '!**/node_modules/**',
+  ],
 };
