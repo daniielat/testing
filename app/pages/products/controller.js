@@ -5,8 +5,8 @@ const View = require('./view');
 
 // normal middleware
 exports.fetchProducts = function fetchProducts(req, res, next) {
-  const { q, limit } = req.query;
-  productsService.getProducts(req.platform.siteId, q, limit)
+  const { q, limit, offset } = req.query;
+  productsService.getProducts(req.platform.siteId, q, limit, offset)
       .then(data => {
         res.locals.products = data;
         next();
@@ -17,9 +17,9 @@ exports.fetchProducts = function fetchProducts(req, res, next) {
 
 // async middleware
 // exports.fetchProductsX = async function fetchProducts(req, res, next) {
-//   const { q, limit } = req.query;
+//   const { q, limit, offset } = req.query;
 //   try {
-//     const products = await productsService.getProducts(req.platform.siteId, q, limit)
+//     const products = await productsService.getProducts(req.platform.siteId, q, limit, offset)
 //     res.locals.products = products;
 //     next();
 //   } catch(err) {

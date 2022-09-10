@@ -23,6 +23,7 @@ describe('fetchProducts middleware', () => {
             query: {
                 q: 'celular',
                 limit: 10,
+                offset: 0
             }
         });
         const res = httpMocks.createResponse();
@@ -43,7 +44,8 @@ describe('fetchProducts middleware', () => {
                 siteId: 'MLA'
             },
             query: {
-                limit: 'a'
+                limit: 'a',
+                offset: 0
             }
         });
         const res = httpMocks.createResponse();
@@ -65,6 +67,7 @@ describe('fetchProducts middleware', () => {
             query: {
                 q: 'celular',
                 limit: 10,
+                offset: 0
             }
         });
         const res = httpMocks.createResponse();
@@ -87,7 +90,8 @@ describe('fetchProducts middleware', () => {
                 siteId: 'MLA'
             },
             query: {
-                limit: 'a'
+                limit: 'a',
+                offset: 0
             }
         });
         const res = httpMocks.createResponse();
@@ -111,7 +115,8 @@ describe('fetchProducts middleware', () => {
                 siteId: 'MLA'
             },
             query: {
-                limit: 'a'
+                limit: 'a',
+                offset: 0
             }
         });
         const res = httpMocks.createResponse();

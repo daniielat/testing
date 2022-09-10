@@ -1,8 +1,11 @@
+@import '~@andes/card/index';
+@import '~@andes/button/index';
+
 $demo-font-size: 1rem;
 $demo-color-gray: #666;
 $demo-color-lightgray: #d3d3d3;
 
-.demo {
+.products {
   font-size: $demo-font-size;
   color: $demo-color-gray;
   padding: 5em;

@@ -25,6 +25,8 @@
     "i18n:download": "i18n download"
   },
   "dependencies": {
+    "@andes/button": "7.21.0",
+    "@andes/card": "7.21.0",
     "nordic": "^7.12.1"
   },
   "devDependencies": {
