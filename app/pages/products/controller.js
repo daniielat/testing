@@ -1,7 +1,7 @@
 const React = require('react');
+const View = require('./view');
 const I18nProvider = require('nordic/i18n/I18nProvider');
 const productsService = require('../../../services/productsService')
-const View = require('./view');
 
 // normal middleware
 exports.fetchProducts = function fetchProducts(req, res, next) {

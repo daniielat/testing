@@ -17,6 +17,7 @@ function View(props) {
 
   const [productList, setProductList] = React.useState(products);
 
+  console.log('helloooo')
   return (
     <div className="products">
       <Head>
@@ -36,8 +37,8 @@ function View(props) {
       <Script src="products.js" />
 
       {
-        products?.length
-        ? <ProductList products={productList} i18n={i18n} setProductList={setProductList}/>
+        productList?.length
+        ? <ProductList i18n={i18n} products={productList} setProductList={setProductList} />
         : null
         // : <h2>{i18n.gettext('No se encontraron productos.')}</h2>
       }

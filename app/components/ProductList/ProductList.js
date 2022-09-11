@@ -4,7 +4,7 @@ const PropTypes = require('prop-types');
 const Image = require('nordic/image');
 const Pagination = require('../../components/Pagination');
 const Card = require('@andes/card');
-const { CardHeader, CardContent } = require('@andes/card');
+const { CardHeader, CardContent, CardFooter } = require('@andes/card');
 const restclient = require('nordic/restclient')({
     timeout: 5000,
     baseURL: '/api'
@@ -50,8 +50,11 @@ const ProductList = ({ products, i18n, setProductList }) => {
                                         src={p.thumbnail}
                                         alt={p.title}
                                         lazyload="off"
-                                    />
+                                        />
                                 </CardContent>
+                                <CardFooter>
+                                    <h2>${p.price}</h2>
+                                </CardFooter>
                             </Card> 
                         ))
                     }
@@ -59,7 +62,6 @@ const ProductList = ({ products, i18n, setProductList }) => {
                 : <h2>{i18n.gettext('No se encontraron productos')}</h2>
             }
         </section>
-        
     )
 }
 
