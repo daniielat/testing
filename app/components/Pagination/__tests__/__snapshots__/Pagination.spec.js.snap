@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`El componente Pagination Renderiza 1`] = `
+<DocumentFragment>
+  <section>
+    <button
+      class="andes-button andes-button--large andes-button--quiet"
+      type="button"
+    >
+      <span
+        class="andes-button__content"
+      >
+        Siguiente
+      </span>
+    </button>
+  </section>
+</DocumentFragment>
+`;

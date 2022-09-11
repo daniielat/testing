@@ -5,7 +5,12 @@ const Button = require('@andes/button');
 const Pagination = ({ i18n, offset, setOffset }) => {
     return (
         <section>
-            <Button onClick={() => setOffset(offset + 10)}>{i18n.gettext('Siguiente')}</Button>
+            <Button 
+                onClick={() => setOffset(offset + 10)}
+                hierarchy="quiet"
+            >
+                {i18n.gettext('Siguiente')}
+            </Button>
         </section>
     )
 }

@@ -1,5 +1,5 @@
 const React = require('react');
-const { useState, useEffect } = React;
+const { useState, useEffect, useRef } = React;
 const PropTypes = require('prop-types');
 const Image = require('nordic/image');
 const Pagination = require('../../components/Pagination');
@@ -12,17 +12,22 @@ const restclient = require('nordic/restclient')({
 
 const ProductList = ({ products, i18n, setProductList }) => {
     const [offset, setOffset] = useState(0);
+    const isMounted = useRef(false);
 
     useEffect(() => {
-        restclient.get('/get-products', {
-            params: {
-                q: 'celular',
-                limit: 10,
-                offset: offset
-            }
-        })
-            .then(products => setProductList(products.data))
-            .catch(err => console.log(err));
+        if(isMounted.current) {
+            restclient.get('/get-products', {
+                params: {
+                    q: 'celular',
+                    limit: 10,
+                    offset: offset
+                }
+            })
+                .then(products => setProductList(products.data))
+                .catch(err => console.log(err));
+        } else {
+            isMounted.current = true;
+        }
     }, [offset]);
 
     return (

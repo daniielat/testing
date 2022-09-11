@@ -29,7 +29,7 @@ function View(props) {
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, { isJSON: true })};
-          console.log('Products page is loaded!');
+          console.log('%cProducts page is loaded!', 'color: green');
         `}
       </Script>
       <Script src="vendor.js" />

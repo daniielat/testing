@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`La View de Products Renderiza 1`] = `
+<DocumentFragment>
+  <div
+    class="products"
+  >
+    <h2>
+      No se encontraron productos.
+    </h2>
+  </div>
+</DocumentFragment>
+`;
