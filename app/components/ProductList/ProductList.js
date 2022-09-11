@@ -23,8 +23,8 @@ const ProductList = ({ products, i18n, setProductList }) => {
                     offset: offset
                 }
             })
-                .then(products => setProductList(products.data))
-                .catch(err => console.log(err));
+                .then(response => setProductList(response.data))
+                .catch(() => setProductList([]));
         } else {
             isMounted.current = true;
         }

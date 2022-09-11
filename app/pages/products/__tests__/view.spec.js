@@ -8,7 +8,7 @@ describe('La View de Products', () => {
     const i18n = { gettext: text => text };
     
     it('Renderiza', () => {
-        component = render(<View i18n={i18n} products={mockProducts.data.data}/>)
+        component = render(<View i18n={i18n} products={mockProducts.data.results}/>)
         const { asFragment } = component;
         expect(asFragment()).toMatchSnapshot();
     });

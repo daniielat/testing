@@ -38,7 +38,8 @@ function View(props) {
       {
         products?.length
         ? <ProductList products={productList} i18n={i18n} setProductList={setProductList}/>
-        : <h2>{i18n.gettext('No se encontraron productos.')}</h2>
+        : null
+        // : <h2>{i18n.gettext('No se encontraron productos.')}</h2>
       }
 
     </div>

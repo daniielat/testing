@@ -5,9 +5,255 @@ exports[`La View de Products Renderiza 1`] = `
   <div
     class="products"
   >
-    <h2>
-      No se encontraron productos.
-    </h2>
+    <section>
+      <h2>
+        Listado de productos
+      </h2>
+      <section>
+        <button
+          class="andes-button andes-button--large andes-button--quiet"
+          type="button"
+        >
+          <span
+            class="andes-button__content"
+          >
+            Siguiente
+          </span>
+        </button>
+      </section>
+      <ol>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+              Celular Zte Blade A31 Plus Gris Rva 1/32gb Nuevo Garantía
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt="Celular Zte Blade A31 Plus Gris Rva 1/32gb Nuevo Garantía"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_979817-MLA51002594618_082022-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+               Moto G22 128 Gb  Cosmic Black 4 Gb Ram
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt=" Moto G22 128 Gb  Cosmic Black 4 Gb Ram"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_854793-MLA50262132804_062022-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+              Samsung Galaxy A32 128 Gb  Awesome Blue 4 Gb Ram
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt="Samsung Galaxy A32 128 Gb  Awesome Blue 4 Gb Ram"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_878776-MLA48428092348_122021-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+              Samsung Galaxy A03 128 Gb  Negro 4 Gb Ram
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt="Samsung Galaxy A03 128 Gb  Negro 4 Gb Ram"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_737913-MLA49433851234_032022-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+              Celular Samsung Galaxy A13 128gb + 4gb Ram Pls Lcd Negro
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt="Celular Samsung Galaxy A13 128gb + 4gb Ram Pls Lcd Negro"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_917545-MLA50401654103_062022-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+              Samsung Galaxy A03 Core 32 Gb  Black 2 Gb Ram
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt="Samsung Galaxy A03 Core 32 Gb  Black 2 Gb Ram"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_604790-MLA49152794859_022022-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+               Moto G60s 128 Gb  Azul 6 Gb Ram
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt=" Moto G60s 128 Gb  Azul 6 Gb Ram"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_788340-MLA48112659213_112021-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+              Samsung Galaxy A13 64 Gb  White 4 Gb Ram
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt="Samsung Galaxy A13 64 Gb  White 4 Gb Ram"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_762562-MLA50401440917_062022-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+              Samsung Galaxy A03 64 Gb  Negro 4 Gb Ram
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt="Samsung Galaxy A03 64 Gb  Negro 4 Gb Ram"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_737913-MLA49433851234_032022-I.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+        >
+          <div
+            class="andes-card__header andes-card__header--border"
+          >
+            <h2
+              class="andes-card__title"
+            >
+              Motorola G51 5g 128 Gb  Dorado 4 Gb Ram
+            </h2>
+          </div>
+          <div
+            class="andes-card__content"
+          >
+            <img
+              alt="Motorola G51 5g 128 Gb  Dorado 4 Gb Ram"
+              class=""
+              decoding="async"
+              src="http://http2.mlstatic.com/D_959500-MLA50302263673_062022-I.jpg"
+            />
+          </div>
+        </div>
+      </ol>
+    </section>
   </div>
 </DocumentFragment>
 `;
