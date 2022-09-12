@@ -1,7 +1,7 @@
-// const restclient = require('../../../app/helpers/restclient');
-const productsService = require('../../../app/helpers/service');
+// const restclient = require('../../../app/helpers/restclient'); // es opcional
+const productsService = require('../../../app/helpers/jest-mocks/service');
 
-jest.mock('../../../app/helpers/restclient', () => () => ({
+jest.mock('../../../app/helpers/jest-mocks/restclient', () => () => ({
     get: jest.fn(() => Promise.resolve({ data: {
         results: [
             { 

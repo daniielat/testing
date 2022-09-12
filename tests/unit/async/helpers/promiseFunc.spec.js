@@ -1,4 +1,4 @@
-const promiseFunc = require('../../../../app/helpers/promiseFunc');
+const promiseFunc = require('../../../../app/helpers/async/promiseFunc');
 
 describe('promiseFunc', () => {
     it('Returns the message `Success.` when it receives a truthy value', () => {

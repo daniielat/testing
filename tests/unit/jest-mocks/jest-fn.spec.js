@@ -1,4 +1,4 @@
-const { invokeCallback, invokeCallbackWithArgs, forEach } = require('../../../app/helpers/callbackFunctions');
+const { invokeCallback, invokeCallbackWithArgs, forEach } = require('../../../app/helpers/jest-mocks/callbackFunctions');
 
 describe('La función invokeCallback', () => {
     it('Invoca la función que recibe por parámetro', () => {
@@ -24,17 +24,15 @@ describe('La función invokeCallbackWithArgs', () => {
 describe('La función forEach', () => {
     it('Invoca el callback sobre cada elemento del array', () => {
         const cb = jest.fn((element) => console.log(element));
+        // es lo mismo que -> jest.fn().mockImplementation(() => {});
         forEach([1, 2, 3], cb);
         expect(cb).toHaveBeenCalledTimes(3);
         expect(cb.mock.calls.length).toBe(3);
     });
 });
 
-// jest.fn(() => {});
-    // jest.fn()
-        // .mockImplementation();
-        // .mockImplementationOnce()
-        // .mockReturnValue().mockReturnValueOnce();
-        // .mockResolvedValue().mockResolvedValueOnce();
-        // .mockRejectedValue()mockRejectedValueOnce();
-
+// jest.fn()
+    // .mockImplementationOnce()
+    // .mockReturnValue().mockReturnValueOnce();
+    // .mockResolvedValue().mockResolvedValueOnce();
+    // .mockRejectedValue()mockRejectedValueOnce();
