@@ -18,13 +18,31 @@
 //     });
 // });
 
+
+// it y test son métodos equivalentes
+// describe -> puede tener otro describe adentro
+//          -> puede tener uno o más it/test adentro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let a = 1;
+let b = 1;
 
 describe('La variable a', () => {
     it('Es igual a la variable b', () => {
-        let b = 1;
         // let b = 2;
         expect(a).toBe(b);
-        expect(a).toEqual(b);
+        // expect(a).toEqual(b);
     });
 });
